@@ -336,7 +336,7 @@
 
     /* CONSULT */
 .consult-card {
-  background: transparent; /* antes tenía verde */
+  background: transparent; /* elimina el fondo verde */
   border: none;
   padding: 0;
   margin: 0;
@@ -386,23 +386,20 @@
 
     .consult-features li:last-child { border-bottom: none; }
 
-    .btn-whatsapp {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: #25D366;
-      color: #fff;
-      font-weight: 700;
-      font-size: 15px;
-      padding: 14px 28px;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: opacity 0.2s, transform 0.15s;
-      width: 100%;
-    }
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25D366; /* verde WhatsApp */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
 
-    .btn-whatsapp:hover { opacity: 0.9; transform: translateY(-1px); }
+    .btn-whatsapp:hover {
+  background-color: #20b954;
+}
 
     /* FAQ */
     .faq-item {
