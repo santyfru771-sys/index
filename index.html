@@ -234,66 +234,68 @@
     }
 
     /* TABLE */
-    .inv-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 24px;
-      font-size: 14px;
-    }
-
-    .inv-table th {
-      text-align: left;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted);
-      padding: 10px 16px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .inv-table td {
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--border);
-      color: #ccc;
-    }
-
-    .inv-table tr:last-child td { border-bottom: none; }
-
-    .status-active {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      color: #4ade80;
-    }
-
-    .status-active::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #4ade80;
-    }
-
-    .status-pending {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--accent);
-    }
-
-    .status-pending::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-
+    <table class="inv-table">
+  <thead>
+    <tr>
+      <th>Mes</th>
+      <th>Instrumento</th>
+      <th>Aporte</th>
+      <th>Rendimiento</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Enero 2026</td>
+      <td>LECAP S30S6</td>
+      <td>$340.000</td>
+      <td>+$56.100</td>
+      <td><span class="status-active">Activo</span></td>
+    </tr>
+    <tr>
+      <td>Febrero 2026</td>
+      <td>LECAP S30S6</td>
+      <td>$340.000</td>
+      <td>+$46.750</td>
+      <td><span class="status-active">Activo</span></td>
+    </tr>
+    <tr>
+      <td>Marzo 2026</td>
+      <td>LECAP S30S6</td>
+      <td>$340.000</td>
+      <td>+$37.400</td>
+      <td><span class="status-active">Activo</span></td>
+    </tr>
+    <tr>
+      <td>Abril 2026</td>
+      <td>LECAP S30S6</td>
+      <td>$340.000</td>
+      <td>+$27.200</td>
+      <td><span class="status-active">Activo</span></td>
+    </tr>
+    <tr>
+      <td>Mayo 2026</td>
+      <td>LECAP S30S6</td>
+      <td>$340.000</td>
+      <td>+$17.850</td>
+      <td><span class="status-active">Activo</span></td>
+    </tr>
+    <tr>
+      <td>Junio 2026</td>
+      <td>LECAP S30S6</td>
+      <td>$340.000</td>
+      <td>+$8.500</td>
+      <td><span class="status-active">Activo</span></td>
+    </tr>
+    <tr style="border-top: 2px solid #e8ff47;">
+      <td colspan="2" style="color:#e8ff47; font-weight:700;">TOTAL</td>
+      <td style="color:#e8ff47; font-weight:700;">$2.040.000</td>
+      <td style="color:#e8ff47; font-weight:700;">+$193.800</td>
+      <td style="color:#e8ff47; font-weight:700;">$2.233.800</td>
+    </tr>
+  </tbody>
+</table>
+    
     /* ERROR CARD */
     .error-card {
       background: var(--surface);
