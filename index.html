@@ -234,67 +234,26 @@
     }
 
     /* TABLE */
-    <table class="inv-table">
-  <thead>
-    <tr>
-      <th>Mes</th>
-      <th>Instrumento</th>
-      <th>Aporte</th>
-      <th>Rendimiento</th>
-      <th>Estado</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Enero 2026</td>
-      <td>LECAP S30S6</td>
-      <td>$340.000</td>
-      <td>+$56.100</td>
-      <td><span class="status-active">Activo</span></td>
-    </tr>
-    <tr>
-      <td>Febrero 2026</td>
-      <td>LECAP S30S6</td>
-      <td>$340.000</td>
-      <td>+$46.750</td>
-      <td><span class="status-active">Activo</span></td>
-    </tr>
-    <tr>
-      <td>Marzo 2026</td>
-      <td>LECAP S30S6</td>
-      <td>$340.000</td>
-      <td>+$37.400</td>
-      <td><span class="status-active">Activo</span></td>
-    </tr>
-    <tr>
-      <td>Abril 2026</td>
-      <td>LECAP S30S6</td>
-      <td>$340.000</td>
-      <td>+$27.200</td>
-      <td><span class="status-active">Activo</span></td>
-    </tr>
-    <tr>
-      <td>Mayo 2026</td>
-      <td>LECAP S30S6</td>
-      <td>$340.000</td>
-      <td>+$17.850</td>
-      <td><span class="status-active">Activo</span></td>
-    </tr>
-    <tr>
-      <td>Junio 2026</td>
-      <td>LECAP S30S6</td>
-      <td>$340.000</td>
-      <td>+$8.500</td>
-      <td><span class="status-active">Activo</span></td>
-    </tr>
-    <tr style="border-top: 2px solid #e8ff47;">
-      <td colspan="2" style="color:#e8ff47; font-weight:700;">TOTAL</td>
-      <td style="color:#e8ff47; font-weight:700;">$2.040.000</td>
-      <td style="color:#e8ff47; font-weight:700;">+$193.800</td>
-      <td style="color:#e8ff47; font-weight:700;">$2.233.800</td>
-    </tr>
-  </tbody>
-</table>
+    .investment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.investment-table th, .investment-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.investment-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+.investment-table tfoot td {
+  font-weight: bold;
+  background-color: #fafafa;
+}
+
+    
     
     /* ERROR CARD */
     .error-card {
